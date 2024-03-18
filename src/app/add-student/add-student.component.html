@@ -1,0 +1,12 @@
+<form name="frmReg" #frmReg="ngForm" (ngSubmit)="save()" novalidate="">
+    Rollno:<input type="text" name="rollno" [(ngModel)]="regObj.rollno" required/><br><br>
+    First Name:<input type="text" name="firstName" [(ngModel)]="regObj.firstName" required /><br><br>
+    Last Name:<input type="text" name="lastName" [(ngModel)]="regObj.lastName"/><br><br>
+    Address:<input type="text" name="address" [(ngModel)]="regObj.address"/><br><br>
+    Email Id:<input type="text" name="email" [(ngModel)]="regObj.email" required/><br><br>
+    Contact No:<input type="text" name="contactNo" [(ngModel)]="regObj.contactNo" required/><br><br>
+    Education:<input type="text" name="education" [(ngModel)]="regObj.education" /><br><br>
+    Course:<input type="text" name="course" [(ngModel)]="regObj.course" /><br><br>
+    <input type="submit" value="REGISTER" [disabled]="frmReg.invalid" />
+</form>
+

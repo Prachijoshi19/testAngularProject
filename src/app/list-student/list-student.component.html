@@ -1,0 +1,26 @@
+<table border="1" align="center" width="90%" >
+    <th>Id</th>
+    <th>ROLLNO</th>
+    <th>FIRST NAME</th>
+    <th>LAST NAME</th>
+    <th>ADDRESS</th>
+    <th>EMAIL ID</th>
+    <th>CONTACT NO</th>
+    <th>EDUCATION</th>
+    <th>COURSE</th>
+    <th>UPDATE</th>
+    <th>DELETE</th>
+    <tr *ngFor="let i of studArr">
+        <td>{{i.id}}</td>
+        <td>{{i.rollno}}</td>
+        <td>{{i.firstName}}</td>
+        <td>{{i.lastName}}</td>
+        <td>{{i.address}}</td>
+        <td>{{i.email}}</td>
+        <td>{{i.contactNo}}</td>
+        <td>{{i.education}}</td>
+        <td>{{i.course}}</td>
+        <td><button (click)="edit(i.id)">UPDATE</button></td>
+        <td><button (click)="del(i.id)">DELETE</button></td>
+    </tr>
+</table>
